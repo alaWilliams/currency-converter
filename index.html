@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency converter</title>
+  <link rel="stylesheet" href="./reset.css" type="text/css">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="header"> Currency converter</h1>
+  <div class="container">
+    <section class="top">
+      <div class="wrapper">
+        <form>
+          <input type="number" class="foreign-currency" placeholder="From">
+          <select name="currency" id="currency">
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+            <option value="chf">CHF</option>
+          </select>
+        </form>
+      </div>
+    </section>
+  
+    <section class="bottom">
+      <button class="btn">Convert 
+      </button>
+      <div class="wrapper">
+        <div class="pln-converted"></div>
+        <div class="pln-name">PLN</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

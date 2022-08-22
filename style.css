@@ -1,0 +1,36 @@
+body {
+  font-family: 'Aboreto', cursive;
+}
+.container {
+  width: 100%;
+}
+.top, .bottom {
+  height: 50vh;
+}
+
+.top {
+  background-color: #12343b;
+}
+
+.bottom {
+  background-color: #c6c6c6;
+}
+
+.header {
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  background-color: #12343b;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .bottom {
+    background-color: red;
+  }
+}
