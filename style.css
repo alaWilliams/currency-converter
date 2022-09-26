@@ -1,19 +1,15 @@
 body {
   font-family: 'Aboreto', cursive;
-}
-.container {
-  width: 100%;
-}
-.top, .bottom {
-  height: 50vh;
+  background-color: hsl(189, 14%, 37%);
 }
 
-.top {
-  background-color: #12343b;
+* {
+  font-family: 'Aboreto', cursive;
 }
 
-.bottom {
-  background-color: #c6c6c6;
+.domestic-section, .foreign-section {
+  height: 40vh;
+  width: 100%
 }
 
 .header {
@@ -22,15 +18,112 @@ body {
   text-align: center;
   font-size: 2rem;
   padding: 1.5rem 0;
-  background-color: #12343b;
+  background-color: hsl(189, 14%, 37%);
 }
 
-@media (min-width: 768px) {
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+}
+.btn {
+  width: 95%;
+  height: 3rem;
+  background-color: hsl(0, 6%, 60%);
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+.btn:hover {
+  background-color: hsl(0, 6%, 50%)
+}
+
+.button-wrapper {
+  display:flex;
+  justify-content: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+}
+.input, .pln-converted{
+  width: 80%;
+  height: 4rem;
+  border: none;
+  background-color: hsl(0, 6%, 82%);
+  display: flex;
+  justify-content: center;
+}
+
+.input-value {
+  background-color: hsl(0, 6%, 82%);;
+  border: none;
+  width: 100%;
+  padding-left: 0.75rem;
+}
+
+.currencies, .pln-name {
+  width: 20%;
+  background-color: hsl(0, 6%, 82%);
+  border: none;
+}
+
+
+.currencies {
+  font-size: 0.75rem;;
+}
+.pln-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pln-converted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+@media screen and (min-width: 768px) {
+
   .container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
   }
 
-  .bottom {
-    background-color: red;
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "foreign-section domestic-section "
+    "button button";
+    grid-gap: 1rem;
+    width: 80%;
+  }
+
+  .button-wrapper {
+    grid-area: button;
+  }
+
+  .domestic-section {
+    grid-area: domestic-section
+  }
+
+  .foreign-section {
+    grid-area: foreign-section;
+  }
+
+  .currencies, .pln-name {
+    width: 35%;
+    background-color: hsl(0, 6%, 82%)
   }
 }

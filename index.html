@@ -14,28 +14,38 @@
 <body>
   <h1 class="header"> Currency converter</h1>
   <div class="container">
-    <section class="top">
+    <div class="grid-container">
+    <section class="foreign-section">
       <div class="wrapper">
-        <form>
-          <input type="number" class="foreign-currency" placeholder="From">
-          <select name="currency" id="currency">
-            <option value="eur">EUR</option>
-            <option value="usd">USD</option>
-            <option value="chf">CHF</option>
+        <form class="form">
+          <div class="input">
+            <input type="number" class="input-value" placeholder="Enter amount">
+          </div>
+          <select name="currency" id="currency" class="currencies">
+            <option value="">--Currency List--</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="CHF">CHF</option>
           </select>
         </form>
       </div>
+      
     </section>
-  
-    <section class="bottom">
-      <button class="btn">Convert 
-      </button>
+   
+    
+    <section class="domestic-section">
+     
       <div class="wrapper">
         <div class="pln-converted"></div>
         <div class="pln-name">PLN</div>
       </div>
     </section>
+    <div class="button-wrapper">
+      <button class="btn" id="btn">Convert</button>
+    </div>
   </div>
+  </div>
+  
 
   <script src="./script.js"></script>
 </body>
