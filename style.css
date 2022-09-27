@@ -37,10 +37,6 @@ body {
   font-weight: 900;
 }
 
-.btn:hover {
-  background-color: hsl(0, 6%, 50%)
-}
-
 .button-wrapper {
   display:flex;
   justify-content: center;
@@ -125,5 +121,9 @@ body {
   .currencies, .pln-name {
     width: 35%;
     background-color: hsl(0, 6%, 82%)
+  }
+  
+  .btn:hover {
+    background-color: hsl(0, 6%, 50%)
   }
 }

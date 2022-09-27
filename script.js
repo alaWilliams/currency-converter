@@ -20,16 +20,14 @@ const convertValue = (data) => {
   const selectVal = select.value;
   const inputVal = input.value;
   const mid = data[0].rates.find(element => element.code === selectVal).mid;
-  const converted = currencyConverted.innerHTML = countThePln(mid, inputVal);
-  return document.body.appendChild(converted);
- 
+  const converted = countThePln(mid, inputVal);
+  return currencyConverted.innerHTML = converted; 
 }
 
 const countThePln = (foreignCurrency, domesticCurrency) => {
   const count = foreignCurrency * domesticCurrency
-  return count.toFixed(2);
-}
-
+  return count.toFixed(2) * 1;
+};
 
 
 
