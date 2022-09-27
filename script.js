@@ -1,4 +1,4 @@
-const url = 'http://api.nbp.pl/api/exchangerates/tables/a/';
+const url = 'https://api.nbp.pl/api/exchangerates/tables/a/';
 
 const select = document.querySelector('.currencies');
 const button = document.querySelector('.btn');
